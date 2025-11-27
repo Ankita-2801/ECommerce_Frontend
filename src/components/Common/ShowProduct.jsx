@@ -199,7 +199,7 @@ const email = location.state?.email || new URLSearchParams(location.search).get(
 
     try {
       const wishres = await axios.post(
-        "http://localhost:5000/api/user/addwish", // <-- URL fixed here
+        "https://ecommerce-backend-th6x.onrender.com/api/user/addwish", // <-- URL fixed here
         { productId: product._id, email: email, productname: product.name }
       );
 
@@ -223,7 +223,7 @@ const email = location.state?.email || new URLSearchParams(location.search).get(
 
     try {
       const res = await axios.delete(
-        `http://localhost:5000/api/user/delwish`, // <-- URL fixed here
+        `https://ecommerce-backend-th6x.onrender.com/api/user/delwish`, // <-- URL fixed here
         {
           data: { productname: product.name, email: email },
         }

@@ -32,7 +32,7 @@ const Wishlist = ({user}) => {
   e.stopPropagation();
      try {
       const res = await axios.delete(
-        `http://localhost:5000/api/user/delwish`, // <-- URL fixed here
+        `https://ecommerce-backend-th6x.onrender.com/api/user/delwish`, // <-- URL fixed here
         {
           data: { productname: item.name, email: email },
         }
