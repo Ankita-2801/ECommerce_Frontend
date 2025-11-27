@@ -4,7 +4,7 @@ import { Star, ThumbsUp, User } from "lucide-react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const API_BASE_URL = "http://localhost:5000/api";
+const API_BASE_URL = "https://ecommerce-backend-th6x.onrender.com/api";
 
 const UserReviews = () => {
   const [reviews, setReviews] = useState([]);

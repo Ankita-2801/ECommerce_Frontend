@@ -48,7 +48,7 @@ const OrderHistorySection = ({ orders }) => {
         throw new Error("Authentication info missing. Please log in again.");
       }
 
-      const response = await fetch("http://localhost:5000/api/reviews", {
+      const response = await fetch("https://ecommerce-backend-th6x.onrender.com/api/reviews", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

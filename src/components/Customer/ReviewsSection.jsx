@@ -9,7 +9,7 @@ import {
   AlertCircle
 } from 'lucide-react';
 
-const API_BASE_URL = 'http://localhost:5000/api/reviews';
+const API_BASE_URL = 'https://ecommerce-backend-th6x.onrender.com/api/reviews';
 
 const UserReviews = ({ email }) => {
   const [reviews, setReviews] = useState([]);
