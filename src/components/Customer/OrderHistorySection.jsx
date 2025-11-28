@@ -9,6 +9,7 @@ import {
   Star,
   X,
 } from "lucide-react";
+import { API_BASE_URL } from "@/config/api";
 
 const OrderHistorySection = ({ orders }) => {
   const [activeReview, setActiveReview] = useState(null); // { orderId, productName }
@@ -48,7 +49,7 @@ const OrderHistorySection = ({ orders }) => {
         throw new Error("Authentication info missing. Please log in again.");
       }
 
-      const response = await fetch("https://ecommerce-backend-th6x.onrender.com/api/reviews", {
+      const response = await fetch(`${API_BASE_URL}/reviews`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

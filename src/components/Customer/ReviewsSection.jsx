@@ -8,8 +8,9 @@ import {
   Search,
   AlertCircle
 } from 'lucide-react';
+import { API_BASE_URL } from '@/config/api';
 
-const API_BASE_URL = 'https://ecommerce-backend-th6x.onrender.com/api/reviews';
+const API_BASE_URL = `${API_BASE_URL}/reviews`;
 
 const UserReviews = ({ email }) => {
   const [reviews, setReviews] = useState([]);
